@@ -23,11 +23,6 @@ jobs:
        - name: Checkout
          uses: actions/checkout@master
          
-       - name: CleanUp Enviroment
-         run: |
-            wget https://raw.githubusercontent.com/Mediatek-leaks/script-personal/main/init.sh
-            sudo bash init.sh
-            
        - name: Downloading Ofp Now.. 
          run: |
             sudo apt-get install expect -y
