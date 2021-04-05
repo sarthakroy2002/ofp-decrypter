@@ -36,8 +36,8 @@ jobs:
              sudo -E apt-get -qq update
              sudo pip install docopt
              sudo pip install pycryptodome
-             wget https://raw.githubusercontent.com/bkerler/oppo_decrypt/master/ofp_mtk_decrypt.py
-             sudo python3 ofp_mtk_decrypt.py $OFP_NAME out
+             wget https://raw.githubusercontent.com/bkerler/oppo_decrypt/master/ofp_qc_extract.py
+             sudo python3 ofp_qc_extract.py $OFP_NAME out
              
        - name: Compress & Upload Decrypted Zip
          run: |
