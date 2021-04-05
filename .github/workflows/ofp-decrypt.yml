@@ -23,6 +23,9 @@ jobs:
        - name: Checkout
          uses: actions/checkout@master
          
+       - name: Cleanup Space
+         uses: rokibhasansagar/slimhub_actions@main
+        
        - name: Downloading Ofp Now.. 
          run: |
             sudo apt-get install expect -y
